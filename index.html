@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG새마을금고</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-cont">
+      <div class="logo-group">
+        <h1>
+          <a href="index.html">
+            <img src="images/ui_ci_mg.png" alt="새마을금고 로고">
+            <span class="ui-blind">mg새마을금고</span>
+          </a>
+        </h1>
+        <a class="banking-area" href="index.html">기업뱅킹</a>
+      </div>
+  
+      <ul id="gnb" class="gnb">
+        <li>
+          <a href="#">
+            <span class="ui-text">조회</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">계좌조회</a></li>
+            <li><a href="#">휴먼계좌조회</a></li>
+            <li><a href="#">해지계좌조회</a></li>
+            <li><a href="#">자기앞수표조회</a></li>
+            <li><a href="#">장애은행조회</a></li>
+            <li><a href="#">로그인내역조회</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">이체</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">이체</a></li>
+            <li><a href="#">이체결과조회</a></li>
+            <li><a href="#">예약이체관리</a></li>
+            <li><a href="#">지연이체관리</a></li>
+            <li><a href="#">대량이체</a></li>
+            <li><a href="#">예적금납입</a></li>
+            <li><a href="#">대출금/이자 상환</a></li>
+            <li><a href="#">공제료납입</a></li>
+            <li><a href="#">자동이체</a></li>
+            <li><a href="#">계좌이동서비스</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">예적금</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">신규</a></li>
+            <li><a href="#">해지예상조회/해지</a></li>
+            <li><a href="#">거치식예금 건별인출</a></li>
+            <li><a href="#">처리결과조회</a></li>
+            <li><a href="#">회전주기관리</a></li>
+            <li><a href="#">세금우대조회/변경</a></li>
+            <li><a href="#">만기자동이체관리</a></li>
+            <li><a href="#">거래중지계좌해지</a></li>
+            <li><a href="#">중도해지취소신청</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">대출</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">예적금범위내대출신청</a></li>
+            <li><a href="#">대출금지급신청</a></li>
+            <li><a href="#">대출한도감액/해지</a></li>
+            <li><a href="#">예적금해지상환</a></li>
+            <li><a href="#">대출금상환</a></li>
+            <li><a href="#">공제계약대출</a></li>
+            <li><a href="#">대출계약철회</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">공제(보험)</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">공제가입내역조회</a></li>
+            <li><a href="#">공제자동이체관리</a></li>
+            <li><a href="#">공제료납입</a></li>
+            <li><a href="#">공제계약대출신청</a></li>
+            <li><a href="#">공제계약대출상환</a></li>
+            <li><a href="#">공제청약철회</a></li>
+            <li><a href="#">공제홈페이지안내(바로가기)</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">세금/공과금</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">일반지로납부</a></li>
+            <li><a href="#">생활요금납부</a></li>
+            <li><a href="#">사회보험료납부</a></li>
+            <li><a href="#">지방세납부</a></li>
+            <li><a href="#">세외수입납부</a></li>
+            <li><a href="#">환경개선부담금납부</a></li>
+            <li><a href="#">기타세입금납부</a></li>
+            <li><a href="#">국세/범칙금납부</a></li>
+            <li><a href="#">납부조회/취소</a></li>
+            <li><a href="#">지로자동이체</a></li>
+            <li><a href="#">CMS자동이체</a></li>
+            <li><a href="#">아파트관리비</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">부가서비스</span>
+          </a>
+          <ul class="lnb">
+            <li>
+              <a href="#">연말정산영수증</a></li>
+            <li><a href="#">통장사본출력</a></li>
+            <li><a href="#">예금잔액증명서</a></li>
+            <li><a href="#">금융거래확인서</a></li>
+            <li><a href="#">부채증명원</a></li>
+            <li><a href="#">금융알림서비스</a></li>
+            <li><a href="#">MG스마트알림</a></li>
+            <li><a href="#">원천징수영수증</a></li>
+            <li><a href="#">현금카드소득공제</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">뱅킹관리</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">계좌관리</a></li>
+            <li><a href="#">사고(분실)신고</a></li>
+            <li><a href="#">개인정보관리</a></li>
+            <li><a href="#">인터넷뱅킹관리</a></li>
+            <li><a href="#">국제조세정보등록</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-text">다른금융</span>
+          </a>
+          <ul class="lnb">
+            <li><a href="#">다른금융 조회</a></li>
+            <li><a href="#">다른금융 이체</a></li>
+            <li><a href="#">다른금융 이체결과조회</a></li>
+            <li><a href="#">다른금융 등록</a></li>
+            <li><a href="#">다른금융 관리</a></li>
+            <li><a href="#">다른금융 상태조회</a></li>
+            <li><a href="#">오픈뱅킹 서비스해지</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+      <div class="right-group">
+        <div class="center-group">
+          <a href="#">
+            <span>인증보안센터</span>
+          </a>
+        </div>
+        <div class="search-group">
+          <a href="#">
+            <img src="images/ui_ico_search.png" alt="검색 버튼">
+            <span class="ui-blind">검색</span>
+          </a>
+        </div>
+        <div class="menu-group">
+          <a href="#">
+            <img src="images/ui_ico_allMenu.png" alt="전체메뉴 버튼">
+            <span class="ui-blind">전체메뉴 버튼</span>
+          </a>
+        </div>
+          
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section>
+      <div class="swiper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide01 on">
+              <div class="item-box">
+                <div class="item-tag">
+                  <p>#기업뱅킹새단장</p>
+                </div>
+                <div class="item-text">
+                  <span>
+                    새로워진
+                    <br>
+                    기업 인터넷뱅킹
+                    <br>
+                    <strong>
+                      2022.11.09(수) <br> OPEN
+                    </strong>
+                  </span>
+                  <p>무궁무진 행복을 드리는 <br> MG새마을금고 기업뱅킹이 더 편리해졌습니다.</p>
+                </div>
+              </div>
+              <div class="info-box">
+
+                <div class="infoCont">
+                  <strong class="info-title">기업뱅킹<br>사용자 가이드</strong>
+                  <span class="info-text">자세하고 친절하게</span>
+                  <span class="info-tag">신규</span>
+                  <span class="icon-box"></span>
+                </div>
+
+                <div class="infoCont">
+                  <strong class="info-title">안전한<br>승인결재서비스</strong>
+                  <span class="info-text">결재선으로 안심관리</span>
+                  <span class="info-tag">결재</span>
+                  <span class="icon-box"></span>
+                </div>
+
+                <div class="infoCont">
+                  <strong class="info-title">기업 금융상품<br>한눈에 보기</strong>
+                  <span class="info-text">다양한 혜택</span>
+                  <span class="info-tag">상품</span>
+                  <span class="icon-box"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide02">
+              <div class="item-box">
+                <div class="item-tag">
+                  <p>#기업뱅킹새출발</p>
+                </div>
+                <div class="item-text">
+                  <span>
+                    기업 모바일뱅킹
+                    <br>
+                    새출발
+                    <br>
+                    <strong>
+                      2022.12.15 (목) <br> OPEN
+                    </strong>
+                  </span>
+
+                  <p>더 나은 더 좋은 MG새마을금고가 <br> 기업 모바일뱅킹으로 나아갑니다.</p>
+                </div>
+              </div>
+
+
+              <ul class="ui-character-group">
+                <li class="cha01"></li>
+                <li class="cha02"></li>
+                <li class="cha03"></li>
+              </ul>
+
+
+              <div class="info-box">
+                <div class="infoCont">
+                  <strong class="info-title">개인사업자<br>비대면 계좌개설</strong>
+                  <span class="info-text">비대면으로<br>간편하게</span>
+                  <span class="info-tag">신규</span>
+                  <span class="icon-box"></span>
+                </div>
+
+                <div class="infoCont">
+                  <strong class="info-title">스피드마이너스<br>대출</strong>
+                  <span class="info-text">저렴한 이자비용</span>
+                  <span class="info-tag">대출</span>
+                  <span class="icon-box"></span>
+                </div>
+
+                <div class="infoCont">
+                  <strong class="info-title">에어머니<br>체크카드</strong>
+                  <span class="info-text">주요항공사 포인트<br>적립</span>
+                  <span class="info-tag">카드</span>
+                  <span class="icon-box"></span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    
+      <article>
+        <div class="main-menu">
+          <div class="menu-content">
+            <div class="menu-tab">
+              <h2 id="menuTab1" class="on">빠른조회</h2>
+              <h2 id="menuTab2">주요메뉴</h2>
+            </div>
+    
+            <div class="menu-list">
+              <div id="quick">
+                <ul>
+                  <li>
+                    <button><span>즉시조회</span></button>
+                  </li>
+                  <li>
+                    <button><span>휴면계좌조회</span></button>
+                  </li>
+                  <li>
+                    <button><span>수표조회</span></button>
+                  </li>
+                </ul>
+              </div>
+              <div id="main" style="display: none;">
+                <ul>
+                  <li><button><span>조회</span></button></li>
+                  <li><button><span>이체</span></button></li>
+                  <li><button><span>인증센터</span></button></li>
+                  <li><button><span>승인결제</span></button></li>
+                  <li><button><span>사고(분실)신고</span></button></li>
+                  <li><button><span>잔액증명서 발급</span></button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="info-content">
+            <div>
+              <a href="#" class="info-top">
+                <strong>
+                  MG새마을금고
+                  <br>
+                  <span>기업뱅킹 이용안내</span>
+                </strong>
+                <br>
+                <p>
+                  기업 인터넷 뱅킹 사용방법이
+                  <br>
+                  궁금하신가요?
+                </p>
+              </a>
+              <div class="info-bottom">
+                <ul>
+                  <li><a href="#">기업뱅킹 이용안내</a></li>
+                  <li><a href="#">이용시간</a></li>
+                  <li><a href="#">서비스 가이드</a></li>
+                  <li><a href="#">MG경리나라</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">자주하는 질문 FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="user-menu">
+          <div class="login-box">
+            <strong>로그인</strong>
+            <br>
+            <a href="#">
+              <span>로그인</span>
+            </a>
+            <ul>
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호초기화/상태회복</a></li>
+            </ul>
+          </div>
+
+          <div class="certificate">
+            <ul>
+              <li><a href="#">인증서 발급,재발급</a></li>
+              <li><a href="#">타기관인증서 등록</a></li>
+            </ul>
+          </div>
+
+          <div class="notice">
+            <strong>
+              공지사항
+              <span></span>
+            </strong>
+            <ul>
+              <li>
+                <a href="#">
+                  <p>전자금융공동망 시스템교체 작업에따른 관련거래 일시중단 안내</p>
+                  <span>2022.12.02</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>위택스 (모바일위택스 포함) 업무 일시중단 안내</p>
+                  <span>2022.11.25</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>CMS 서비스 일시중단 안내</p>
+                  <span>2022.11.18</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="cs-center">
+            <div class="custom-center">
+              <a href="#">고객센터</a>
+              <span>평일9시 ~ 18시(휴무일 제외)</span>
+            </div>
+            <div class="center-num">
+              <a href="#">1588-8801</a>
+              <span>해외 +82-2-2192-0200</span>
+            </div>
+            <div class="chat-bot">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+    
+    
+      </article>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="cs-footer">
+        <div class="footer-custom-center">
+          <a href="#">고객센터</a>
+          <span>평일 9:00 ~ 18:00 (휴무일 제외) / 사고신고 24시간 연중무휴 접수</span>
+        </div>
+        <div class="footer-center-num">
+          <div class="number-item">
+            <strong>국내</strong>
+            <span>1599-9000 / 1588-8801</span>
+          </div>
+          <div class="number-item">
+            <strong>국외</strong>
+            <span>+82-2-2192-0200</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-gnb">
+          <ul>
+            <li><a href="#">새마을금고 안내</a></li>
+            <li><a href="#">새마을금고 찾기</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">신용정보활용체제</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="family-site">
+            <button id="familyBtn">패밀리사이트</button>
+            <ul class="site-list">
+              <li><a href="#">개인뱅킹</a></li>
+              <li><a href="#">새마을금고홈페이지</a></li>
+              <li><a href="#">공제</a></li>
+              <li><a href="#">MG체크카드</a></li>
+              <li><a href="#">MG 인재개발원</a></li>
+              <li><a href="#">제주연수원</a></li>
+              <li><a href="#">새마을금고 복지회</a></li>
+              <li><a href="#">MG새마을금고 배드민턴단</a></li>
+              <li><a href="#">MG새마을금고 지역희망나눔재단</a></li>
+              <li><a href="#">MG 신용정보</a></li>
+              <li><a href="#">MG자산관리</a></li>
+            </ul>
+          </div>
+          <div class="web-mark">
+            <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank">
+              <img src="images/ui_ico_webwatch.png" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- <div class="copyright">
+          <span>©MG새마을금고. All rights reserved</span>
+        </div> -->
+    </div>
+  </footer>
+  
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</html>
